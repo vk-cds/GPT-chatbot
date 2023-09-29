@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+body{
+    background: lightblue;
+
+}
+
+.chatbot{
+    position:fixed;
+    right:40px;
+    top: 10px;
+    bottom: 0px;
+ 
+ overflow: hidden;
+ width: 500px;
+ background: rgba(255, 233, 208, 0.977);
+ border-radius: 15px;
+
+}
+
+.chatbot header{
+    background-color: rgb(56, 86, 197);
+    padding:10px;
+    text-align: center;
+}
+
+.chatbot header h2{
+    color:aliceblue;
+    font-size: large;
+}
+
+.chatbox{
+    height: 500px;
+    overflow-y: auto;
+    padding: 15px 20px 70px;
+   
+}
+.chat{
+    display:flex;
+}
+/* logo */
+ .incoming span{
+height:35px;
+width:32px;
+margin: 10px;
+text-align: center;
+line-height: 40px;
+background: #3856c5;
+color: aliceblue;
+}
+/* blue user chat */
+ .outgoing{
+    justify-content: flex-end;
+    margin: 10px 0px;
+}
+.chat p{
+background: rgb(56 86 197);
+padding: 10px;
+border-radius: 10px 10px 0 10px;
+color: white;
+font-size:0.95rem;
+white-space: pre-wrap;
+}
+
+.chatbox .incoming p{
+    color: rgb(0, 0, 0);
+    background: whitesmoke;
+    border-radius: 10px 10px 10px 0;
+}
+
+.chat-input{
+    width: 100%;
+  padding: 5px 20px;
+    bottom: 0;
+    background: white;
+}
+
+.chat-input textarea{
+    border: none;
+    outline:none;
+    font-size: 0.95rem;
+    resize: none;
+    padding: 10px 10px 10px 0;
+    height: 40px;
+    width:90%
+}
+
+.chat-input span{
+    color:rgb(56, 86, 197);;
+    align-self: flex-end;
+    cursor:pointer;
+    visibility: hidden;
+   line-height: 25px;
+}
+
+.chat-input textarea:valid ~span{
+    visibility: visible;
+}
+
+@media(max-width:500px)
+{
+    .chatbot{
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .chatbot .chatbox{
+        height: 90%;
+    }
+}

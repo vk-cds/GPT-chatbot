@@ -3,8 +3,7 @@ let msg = [];
 const chatinput = document.querySelector(".chat-input textarea");
 const sendbtn = document.querySelector(".chat-input span");
 const chatbox = document.querySelector(".chatbox");
-// const API_KEY = "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"; company
-const API_KEY = "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"; //sadelf phone no
+const API_KEY = "YOUR_API_KEY_HERE";
 
 let usermsg;
 chatinput.addEventListener("keydown", async (e) => {
